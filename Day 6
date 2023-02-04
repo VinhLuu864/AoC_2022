@@ -1,0 +1,8 @@
+file6 = open("Inputs/input6", 'r')
+data = file6.read()
+
+counter = 0
+while len(set(data[counter:counter+14])) != 14:
+	counter += 1
+
+print(counter + 14)
